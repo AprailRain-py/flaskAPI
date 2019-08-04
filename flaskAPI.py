@@ -7,11 +7,7 @@ from functools import wraps
 import os
 
 app = Flask(__name__)
-# 68.183.90.163
-# user: testuser
-# pass: test123
-# db: testdb
-# tbl_users
+
 # 'mysql://testuser:test123@68.183.90.163/testdb'
 app.config['SECRET_KEY'] = '####$$$$'
 app.config['SQLALCHEMY_DATABASE_URI'] = os.environ.get('mySQL')
